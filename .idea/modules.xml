@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sqlspark.iml" filepath="$PROJECT_DIR$/.idea/modules/sqlspark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sqlspark-build.iml" filepath="$PROJECT_DIR$/.idea/modules/sqlspark-build.iml" />
     </modules>
   </component>
 </project>
