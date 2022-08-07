@@ -14,7 +14,7 @@ object Main {
   spark.sparkContext.setLogLevel("ERROR")
 
   // read in csv data
-  val df: DataFrame = spark.read.option("header", "true").csv("twisters.csv")
+  val df: DataFrame = spark.read.option("header", "true").option("inferSchema","true").csv("twisters.csv")
 
   // filter out scenarios where tornado magnitude is unknown (webpage says this is why some are set to -9)
   val mydf: DataFrame = df.select("yr","mo","dy","st","mag","inj", "fat").filter(df("mag") =!= "-9")
